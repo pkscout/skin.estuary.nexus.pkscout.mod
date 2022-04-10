@@ -1,20 +1,33 @@
 # Kodi Media Center language file
 # Addon Name: Estuary
 # Addon id: skin.estuary
-# Addon Provider: phil65, Ichabod Fletchman
+# Addon Provider: Team Kodi
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Hungarian (Hungary) (http://www.transifex.com/projects/p/kodi-main/language/hu_HU/)\n"
+"PO-Revision-Date: 2022-02-26 16:13+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Hungarian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/hu_hu/>\n"
+"Language: hu_hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu_HU\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.11\n"
+
+msgctxt "Addon Summary"
+msgid "Estuary skin by phil65. (Kodi's default skin)"
+msgstr "Estuary felszín. Készítette phil65 és Piers. (Kodi alapértelmezett felszín)"
+
+msgctxt "Addon Description"
+msgid "Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use."
+msgstr "Az Estuary az alapértelmezett felszín a 17.0 és újabb Kodi kiadásokban. Megpróbál könnyen kezelhető és használható lenni, az újonc Kodi felhasználóknak is."
+
+msgctxt "Addon Disclaimer"
+msgid "Estuary is the default skin for Kodi, removing it may cause issues"
+msgstr "Az Estuary az alapértelmezett Kodi felszín. Eltávolítása problémákat okozhat"
 
 msgctxt "#31000"
 msgid "Now playing"
@@ -76,10 +89,12 @@ msgctxt "#31014"
 msgid "Unplayed albums"
 msgstr "Nem játszott albumok"
 
+#. home screen recordings widget: recent tv / radio recordings
 msgctxt "#31015"
 msgid "Recent recordings"
 msgstr "Friss felvételek"
 
+#. home screen channel widget: recently played tv channels. (please note that in some non-english languages #31018 and #31016 might not be equal)
 msgctxt "#31016"
 msgid "Recently played channels"
 msgstr "Mostanában játszott csatornák"
@@ -88,6 +103,7 @@ msgctxt "#31017"
 msgid "Rated"
 msgstr "Értékelés"
 
+#. home screen channel widget: recently played radio channels. (please note that in some non-english languages #31018 and #31016 might not be equal)
 msgctxt "#31018"
 msgid "Recently played channels"
 msgstr "Mostanában játszott csatornák"
@@ -136,6 +152,7 @@ msgctxt "#31029"
 msgid "Last logged in"
 msgstr "Utoljára bejelentkezve"
 
+#. Label to show the system memory usage
 msgctxt "#31030"
 msgid "System memory usage"
 msgstr "Rendszer memóriahasználata"
@@ -340,18 +357,22 @@ msgctxt "#31098"
 msgid "Select your Kodi user profile[CR]to login and continue"
 msgstr "Válaszd ki a Kodi felhasználói profilod[CR]a belépéshez"
 
+#. viewtype name
 msgctxt "#31099"
 msgid "IconWall"
 msgstr "IkonFal"
 
+#. viewtype name
 msgctxt "#31100"
 msgid "Shift"
 msgstr "Shift"
 
+#. viewtype name
 msgctxt "#31101"
 msgid "InfoWall"
 msgstr "InfóFal"
 
+#. viewtype name
 msgctxt "#31102"
 msgid "Wall"
 msgstr "Fal"
@@ -372,6 +393,7 @@ msgctxt "#31106"
 msgid "Teletext"
 msgstr "Teletext"
 
+#. viewtype name
 msgctxt "#31107"
 msgid "WideList"
 msgstr "SzélesLista"
@@ -395,6 +417,10 @@ msgstr "Helyi könyvtár keresése"
 msgctxt "#31114"
 msgid "Search YouTube"
 msgstr "YouTube keresés"
+
+msgctxt "#31115"
+msgid "Toggle subtitle"
+msgstr "Felirat váltás"
 
 msgctxt "#31116"
 msgid "Remove this main menu item"
@@ -476,18 +502,22 @@ msgctxt "#31136"
 msgid "Click here to see latest changes..."
 msgstr "Legfrissebb változtatások..."
 
+#. Label to show PVR info page
 msgctxt "#31137"
-msgid "PVR info"
-msgstr "PVR információ"
+msgid "PVR"
+msgstr "PVR"
 
+#. Label to show player info page
 msgctxt "#31138"
-msgid "Player process info"
-msgstr "Feldolgozási információ"
+msgid "Player"
+msgstr "Lejátszó"
 
+#. Label to show video decoder name
 msgctxt "#31139"
 msgid "Video decoder"
 msgstr "Videó dekóder"
 
+#. Label to show the video pixel format
 msgctxt "#31140"
 msgid "Pixel format"
 msgstr "Képpont formátum"
@@ -550,7 +580,7 @@ msgstr "Nyomja meg az OK-t a helyek közötti váltáshoz"
 
 msgctxt "#31155"
 msgid "No bookmarks created yet."
-msgstr "Még nincs létrehozva könyvjelző"
+msgstr "Még nincs létrehozva könyvjelző."
 
 msgctxt "#31156"
 msgid "Choose background pattern"
@@ -584,26 +614,101 @@ msgctxt "#31163"
 msgid "Show Fanart background"
 msgstr "Illusztráció háttér megjelenítése"
 
+#. Choose profile identifier
 msgctxt "#31164"
 msgid "Choose kind of profile identification"
 msgstr "Válassza ki a profil azonosítását"
 
+#. Label for the kind of profile identification
 msgctxt "#31165"
 msgid "Profile name"
 msgstr "Profil neve"
 
+#. Label for the kind of profile identification
 msgctxt "#31166"
 msgid "Profile avatar"
 msgstr "Profil avatar"
 
+#. Label of a setting
 msgctxt "#31167"
 msgid "Animate background"
 msgstr "Animált háttér"
 
+#. Label of a setting
 msgctxt "#31168"
 msgid "Show posters instead of thumbs for musicvideos"
 msgstr "Poszterek megjelenítése bélyegképek helyett a zenei videóknál"
 
+#. Description label for skin settings area
 msgctxt "#31169"
 msgid "Artwork related settings."
 msgstr "Illusztrációval kapcsolatos beállítások."
+
+# empty strings from id 31170 to 31599
+#. Label to show the video codec name
+msgctxt "#31600"
+msgid "Video codec"
+msgstr "Videó kodek"
+
+#. Label to show the video resolution
+msgctxt "#31601"
+msgid "Video resolution"
+msgstr "Felbontás"
+
+#. Label to show the video aspect
+msgctxt "#31602"
+msgid "Video aspect"
+msgstr "Videó képarány"
+
+#. Label to show the video bitrate
+msgctxt "#31603"
+msgid "Video bitrate"
+msgstr ""
+
+#. Label to show the audio codec name
+msgctxt "#31604"
+msgid "Audio codec"
+msgstr "Hang kodek"
+
+#. Label to show the number of audio channels
+msgctxt "#31605"
+msgid "Audio channels"
+msgstr "Hangcsatornák"
+
+#. Label to show the audio bitrate
+msgctxt "#31606"
+msgid "Audio bitrate"
+msgstr ""
+
+#. Label to show the screen resolution
+msgctxt "#31607"
+msgid "Screen resolution"
+msgstr "Képernyő felbontása"
+
+#. Label to show the system rendering speed
+msgctxt "#31608"
+msgid "System rendering speed"
+msgstr ""
+
+#. Label to show the system CPU usage
+msgctxt "#31609"
+msgid "System CPU usage"
+msgstr "Rendszer CPU használat"
+
+#. Label to show the media (metadata) info page
+msgctxt "#31610"
+msgid "Media"
+msgstr "Média"
+
+#. Label to show the system info page
+msgctxt "#31611"
+msgid "System"
+msgstr "Rendszer"
+
+#~ msgctxt "#31137"
+#~ msgid "PVR info"
+#~ msgstr "PVR információ"
+
+#~ msgctxt "#31138"
+#~ msgid "Player process info"
+#~ msgstr "Feldolgozási információ"

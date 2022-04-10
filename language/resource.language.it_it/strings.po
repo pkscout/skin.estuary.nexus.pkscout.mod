@@ -1,20 +1,33 @@
 # Kodi Media Center language file
 # Addon Name: Estuary
 # Addon id: skin.estuary
-# Addon Provider: phil65, Ichabod Fletchman
+# Addon Provider: Team Kodi
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
-"Report-Msgid-Bugs-To: https://github.com/xbmc/xbmc/issues/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Kodi Translation Team\n"
-"Language-Team: Italian (Italy) (http://www.transifex.com/projects/p/kodi-main/language/it_IT/)\n"
+"PO-Revision-Date: 2022-01-20 16:13+0000\n"
+"Last-Translator: Venice Man <marco@spezzamonte.it>\n"
+"Language-Team: Italian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-estuary/it_it/>\n"
+"Language: it_it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it_IT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+msgctxt "Addon Summary"
+msgid "Estuary skin by phil65. (Kodi's default skin)"
+msgstr "Skin Estuary da phil65 e Piers. (Skin predefinita di Kodi)"
+
+msgctxt "Addon Description"
+msgid "Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use."
+msgstr "Estuary è la skin predefinita di Kodi 17.0 e successivi. Cerca di essere facile da capire e usare per i nuovi utenti di Kodi."
+
+msgctxt "Addon Disclaimer"
+msgid "Estuary is the default skin for Kodi, removing it may cause issues"
+msgstr "Estuary è la skin predefinita di Kodi, rimuoverla potrebbe causare problemi"
 
 msgctxt "#31000"
 msgid "Now playing"
@@ -76,10 +89,12 @@ msgctxt "#31014"
 msgid "Unplayed albums"
 msgstr "Album non riprodotti"
 
+#. home screen recordings widget: recent tv / radio recordings
 msgctxt "#31015"
 msgid "Recent recordings"
 msgstr "Registrazioni recenti"
 
+#. home screen channel widget: recently played tv channels. (please note that in some non-english languages #31018 and #31016 might not be equal)
 msgctxt "#31016"
 msgid "Recently played channels"
 msgstr "Canali riprodotti di recente"
@@ -88,6 +103,7 @@ msgctxt "#31017"
 msgid "Rated"
 msgstr "Classificato"
 
+#. home screen channel widget: recently played radio channels. (please note that in some non-english languages #31018 and #31016 might not be equal)
 msgctxt "#31018"
 msgid "Recently played channels"
 msgstr "Canali riprodotti di recente"
@@ -136,6 +152,7 @@ msgctxt "#31029"
 msgid "Last logged in"
 msgstr "Ultimo login"
 
+#. Label to show the system memory usage
 msgctxt "#31030"
 msgid "System memory usage"
 msgstr "Utilizzo memoria sistema"
@@ -270,7 +287,7 @@ msgstr "Scegli predefiniti"
 
 msgctxt "#31069"
 msgid "Last Updated"
-msgstr "Ultimo agg."
+msgstr "Ultimo aggiornamento"
 
 msgctxt "#31071"
 msgid "by"
@@ -340,18 +357,22 @@ msgctxt "#31098"
 msgid "Select your Kodi user profile[CR]to login and continue"
 msgstr "Scegli il tuo profilo utente Kodi[CR]per fare login e continuare"
 
+#. viewtype name
 msgctxt "#31099"
 msgid "IconWall"
 msgstr "Muro di Icone"
 
+#. viewtype name
 msgctxt "#31100"
 msgid "Shift"
 msgstr "Spostamento"
 
+#. viewtype name
 msgctxt "#31101"
 msgid "InfoWall"
 msgstr "Muro Info"
 
+#. viewtype name
 msgctxt "#31102"
 msgid "Wall"
 msgstr "Muro"
@@ -370,8 +391,9 @@ msgstr "Aggiungi sorgenti video e imposta il contenuto appropriato per poter rie
 
 msgctxt "#31106"
 msgid "Teletext"
-msgstr "Teletext"
+msgstr "Televideo"
 
+#. viewtype name
 msgctxt "#31107"
 msgid "WideList"
 msgstr "Lista Larga"
@@ -395,6 +417,10 @@ msgstr "Cerca nella libreria locale"
 msgctxt "#31114"
 msgid "Search YouTube"
 msgstr "Cerca su Youtube"
+
+msgctxt "#31115"
+msgid "Toggle subtitle"
+msgstr "Alterna sottotitoli"
 
 msgctxt "#31116"
 msgid "Remove this main menu item"
@@ -476,18 +502,22 @@ msgctxt "#31136"
 msgid "Click here to see latest changes..."
 msgstr "Clicca qui per vedere gli ultimi cambiamenti..."
 
+#. Label to show PVR info page
 msgctxt "#31137"
-msgid "PVR info"
-msgstr "Info PVR"
+msgid "PVR"
+msgstr "PVR"
 
+#. Label to show player info page
 msgctxt "#31138"
-msgid "Player process info"
-msgstr "Info processo Riproduzione"
+msgid "Player"
+msgstr "Player"
 
+#. Label to show video decoder name
 msgctxt "#31139"
 msgid "Video decoder"
 msgstr "Decoder Video"
 
+#. Label to show the video pixel format
 msgctxt "#31140"
 msgid "Pixel format"
 msgstr "Formato Pixel"
@@ -542,7 +572,7 @@ msgstr "Video Musicali casuali"
 
 msgctxt "#31153"
 msgid "You do not have any add-ons of this type installed. Enter the add-on browser to download add-ons created by our community."
-msgstr "Non hai alcun Add-On di questo tipo installato. Apri il browser Add-On per per scaricare Add-On creati dalla nostra community."
+msgstr "Non hai alcun Add-On di questo tipo installato. Apri il browser Add-On per scaricare Add-On creati dalla nostra community."
 
 msgctxt "#31154"
 msgid "Press OK to switch between locations"
@@ -584,26 +614,101 @@ msgctxt "#31163"
 msgid "Show Fanart background"
 msgstr "Mostra sfondo Fanart"
 
+#. Choose profile identifier
 msgctxt "#31164"
 msgid "Choose kind of profile identification"
 msgstr "Scegli il tipo di indentificazione del profilo"
 
+#. Label for the kind of profile identification
 msgctxt "#31165"
 msgid "Profile name"
 msgstr "Nome profilo"
 
+#. Label for the kind of profile identification
 msgctxt "#31166"
 msgid "Profile avatar"
 msgstr "Avatar profilo"
 
+#. Label of a setting
 msgctxt "#31167"
 msgid "Animate background"
 msgstr "Anima background"
 
+#. Label of a setting
 msgctxt "#31168"
 msgid "Show posters instead of thumbs for musicvideos"
 msgstr "Mostra poster anziché anteprime per video musicali"
 
+#. Description label for skin settings area
 msgctxt "#31169"
 msgid "Artwork related settings."
 msgstr "Impostazioni relative agli Artwork."
+
+# empty strings from id 31170 to 31599
+#. Label to show the video codec name
+msgctxt "#31600"
+msgid "Video codec"
+msgstr "Codec video"
+
+#. Label to show the video resolution
+msgctxt "#31601"
+msgid "Video resolution"
+msgstr "Risoluzione video"
+
+#. Label to show the video aspect
+msgctxt "#31602"
+msgid "Video aspect"
+msgstr "Aspetto video"
+
+#. Label to show the video bitrate
+msgctxt "#31603"
+msgid "Video bitrate"
+msgstr "Bitrate video"
+
+#. Label to show the audio codec name
+msgctxt "#31604"
+msgid "Audio codec"
+msgstr "Codec audio"
+
+#. Label to show the number of audio channels
+msgctxt "#31605"
+msgid "Audio channels"
+msgstr "Canali audio"
+
+#. Label to show the audio bitrate
+msgctxt "#31606"
+msgid "Audio bitrate"
+msgstr "Bitrate audio"
+
+#. Label to show the screen resolution
+msgctxt "#31607"
+msgid "Screen resolution"
+msgstr "Risoluzione dello schermo"
+
+#. Label to show the system rendering speed
+msgctxt "#31608"
+msgid "System rendering speed"
+msgstr "Velocità di rendering del sistema"
+
+#. Label to show the system CPU usage
+msgctxt "#31609"
+msgid "System CPU usage"
+msgstr "Utilizzo CPU del sistema"
+
+#. Label to show the media (metadata) info page
+msgctxt "#31610"
+msgid "Media"
+msgstr "Media"
+
+#. Label to show the system info page
+msgctxt "#31611"
+msgid "System"
+msgstr "Sistema"
+
+#~ msgctxt "#31137"
+#~ msgid "PVR info"
+#~ msgstr "Info PVR"
+
+#~ msgctxt "#31138"
+#~ msgid "Player process info"
+#~ msgstr "Info processo Riproduzione"
