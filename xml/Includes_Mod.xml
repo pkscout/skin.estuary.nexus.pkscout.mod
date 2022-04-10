@@ -709,9 +709,11 @@
 		<onload condition="!$EXP[HasMusicVideoSlot5]">Skin.SetBool(mvslot5_show_studios)</onload>	
 		<onload condition="!$EXP[HasTVSlot1]">Skin.SetBool(tvslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasTVSlot2]">Skin.SetBool(tvslot2_show_recordings)</onload>
-		<onload condition="!$EXP[HasTVSlot3]">Skin.SetBool(tvslot3_show_channelgroup)</onload>
+		<onload condition="!$EXP[HasTVSlot3]">Skin.SetBool(tvslot3_show_timers)</onload>
+		<onload condition="!$EXP[HasTVSlot4]">Skin.SetBool(tvslot4_show_channelgroup)</onload>
 		<onload condition="!$EXP[HasRadioSlot1]">Skin.SetBool(radioslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasRadioSlot2]">Skin.SetBool(radioslot2_show_recordings)</onload>
+		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_timers)</onload>
 		<onload condition="!$EXP[HasAddonSlot1]">Skin.SetBool(addonslot1_show_video)</onload>	
 		<onload condition="!$EXP[HasAddonSlot2]">Skin.SetBool(addonslot2_show_music)</onload>	
 		<onload condition="!$EXP[HasAddonSlot3]">Skin.SetBool(addonslot3_show_none)</onload>	
@@ -719,7 +721,7 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.0.10)</onload>
+		<onload>Skin.SetString(skin_version,1.0.0)</onload>
 	</include>
 	<include name="ModFonts">
 			<!-- Normal Fonts -->
@@ -773,6 +775,12 @@
 				<size>27</size>
 				<style>lighten</style>
 				<linespacing>0.8</linespacing>
+			</font>
+			<font>
+				<name>font32</name>
+				<filename>RobotoCondensed-Regular.ttf</filename>
+				<size>32</size>
+				<style>lighten</style>
 			</font>
 			<font>
 				<name>font37</name>
@@ -832,6 +840,12 @@
 				<name>font36_title</name>
 				<filename>RobotoCondensed-Regular.ttf</filename>
 				<size>36</size>
+				<style>bold</style>
+			</font>
+			<font>
+				<name>font40_title</name>
+				<filename>RobotoCondensed-Regular.ttf</filename>
+				<size>40</size>
 				<style>bold</style>
 			</font>
 			<font>
