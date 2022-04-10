@@ -470,6 +470,7 @@
 							<param name="show_recordings" value="Skin.HasSetting(tvslot1_show_recordings)" />
 							<param name="show_timers" value="Skin.HasSetting(tvslot1_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot1_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(tvslot1_show_search)" />
 							<param name="list_id" value="12200" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot2_show_none) + System.HasPVRAddon">
@@ -477,6 +478,7 @@
 							<param name="show_recordings" value="Skin.HasSetting(tvslot2_show_recordings) | !$EXP[HasTVSlot2]" />
 							<param name="show_timers" value="Skin.HasSetting(tvslot2_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot2_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(tvslot2_show_search)" />
 							<param name="list_id" value="12300" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot3_show_none) + System.HasPVRAddon">
@@ -484,6 +486,7 @@
 							<param name="show_recordings" value="Skin.HasSetting(tvslot3_show_recordings)" />
 							<param name="show_timers" value="Skin.HasSetting(tvslot3_show_timers) | !$EXP[HasTVSlot3]" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot3_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(tvslot3_show_search)" />
 							<param name="list_id" value="12400" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot4_show_none) + System.HasPVRAddon">
@@ -491,6 +494,15 @@
 							<param name="show_recordings" value="Skin.HasSetting(tvslot4_show_recordings)" />
 							<param name="show_timers" value="Skin.HasSetting(tvslot4_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot4_show_channelgroups) | !$EXP[HasTVSlot4]" />
+							<param name="show_search" value="Skin.HasSetting(tvslot4_show_search)" />
+							<param name="list_id" value="12500" />
+						</include>
+						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot5_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(tvslot5_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(tvslot5_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(tvslot5_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(tvslot5_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(tvslot5_show_search) | !$EXP[HasTVSlot5]" />
 							<param name="list_id" value="12500" />
 						</include>
 					</control>
@@ -527,19 +539,41 @@
 							<param name="show_channels" value="Skin.HasSetting(radioslot1_show_channels) | !$EXP[HasRadioSlot1]" />
 							<param name="show_recordings" value="Skin.HasSetting(radioslot1_show_recordings)" />
 							<param name="show_timers" value="Skin.HasSetting(radioslot1_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(radioslot1_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(radioslot1_show_search)" />
 							<param name="list_id" value="13200" />
 						</include>
 						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot2_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(radioslot2_show_channels)" />
 							<param name="show_recordings" value="Skin.HasSetting(radioslot2_show_recordings) | !$EXP[HasRadioSlot2]" />
 							<param name="show_timers" value="Skin.HasSetting(radioslot2_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(radioslot2_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(radioslot2_show_search)" />
 							<param name="list_id" value="13300" />
 						</include>
 						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot3_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(radioslot3_show_channels)" />
 							<param name="show_recordings" value="Skin.HasSetting(radioslot3_show_recordings)" />
 							<param name="show_timers" value="Skin.HasSetting(radioslot3_show_timers) | !$EXP[HasRadioSlot3]" />
-							<param name="list_id" value="13300" />
+							<param name="show_channelgroups" value="Skin.HasSetting(radioslot3_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(radioslot3_show_search)" />
+							<param name="list_id" value="13400" />
+						</include>
+						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot4_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(radioslot4_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(radioslot4_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(radioslot4_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(radioslot4_show_channelgroups) | !$EXP[HasRadioSlot4]" />
+							<param name="show_search" value="Skin.HasSetting(radioslot4_show_search)" />
+							<param name="list_id" value="13500" />
+						</include>
+						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot5_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(radioslot5_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(radioslot5_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(radioslot5_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(radioslot5_show_channelgroups)" />
+							<param name="show_search" value="Skin.HasSetting(radioslot5_show_search) | !$EXP[HasRadioSlot5]" />
+							<param name="list_id" value="13500" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">

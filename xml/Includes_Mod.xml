@@ -206,6 +206,7 @@
 			<label>$LOCALIZE[19021]</label>
 			<property name="menu_id">$NUMBER[13000]</property>
 			<onclick condition="Skin.HasSetting(radioaction_channels) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(RadioChannels)</onclick>
+			<onclick condition="Skin.HasSetting(radioaction_guide)">ActivateWindow(RadioGuide)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_recordings)">ActivateWindow(RadioRecordings)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_timers)">ActivateWindow(RadioTimers)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_rules)">ActivateWindow(RadioTimerRules)</onclick>
@@ -601,57 +602,105 @@
 	<include name="TVSubMenuItem">
 		<param name="show_channels" />
 		<param name="show_reordings" />
+		<param name="show_timers" />
+		<param name="show_channelgroups" />
+		<param name="show_search" />
 		<param name="list_id" />
 		<definition>
-			<include content="WidgetListChannels" condition="$PARAM[show_channels]">
+			<include content="WidgetListPVR" condition="$PARAM[show_channels]">
 				<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
 				<param name="sortby" value="lastplayed"/>
 				<param name="sortorder" value="descending"/>
 				<param name="widget_header" value="$LOCALIZE[31016]"/>
-				<param name="widget_target" value="pvr"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="info_update" value="5000"/>
 			</include>
-			<include content="WidgetListChannels" condition="$PARAM[show_recordings]">
+			<include content="WidgetListPVR" condition="$PARAM[show_recordings]">
 				<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
 				<param name="sortby" value="date"/>
 				<param name="sortorder" value="descending"/>
 				<param name="widget_header" value="$LOCALIZE[31015]"/>
-				<param name="widget_target" value="pvr"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="label" value="$INFO[ListItem.ChannelName]"/>
-				<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+				<param name="label" value="$INFO[ListItem.Title]$INFO[ListItem.Date, (,)]"/>
+				<param name="label2" value="$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName]"/>
 			</include>
-			<include content="WidgetListChannels" condition="$PARAM[show_channelgroups]">
+			<include content="WidgetListPVR" condition="$PARAM[show_timers]">
+				<param name="content_path" value="pvr://timers/tv/timers/?view=hidedisabled"/>
+				<param name="sortorder" value="ascending"/>
+				<param name="sortby" value="date"/>
+				<param name="widget_header" value="$LOCALIZE[19040]"/>
+				<param name="widget_target" value="tvtimers"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="label" value="$INFO[ListItem.Title]$INFO[ListItem.Date, (,)]"/>
+				<param name="label2" value="$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName]"/>
+			</include>
+			<include content="WidgetListPVR" condition="$PARAM[show_channelgroups]">
 				<param name="content_path" value="pvr://channels/tv"/>
 				<param name="widget_header" value="$LOCALIZE[19173]"/>
 				<param name="widget_target" value="tvguide"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="item_treshold" value="1"/>
 			</include>
+			<include content="WidgetListPVR" condition="$PARAM[show_search]">
+				<param name="content_path" value="pvr://search/tv/savedsearches"/>
+				<param name="sortorder" value="descending"/>
+				<param name="sortby" value="date"/>
+				<param name="widget_header" value="$LOCALIZE[19337]"/>
+				<param name="widget_target" value="tvsearch"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
 		</definition>
 	</include>
 	<include name="RadioSubMenuItem">
 		<param name="show_channels" />
 		<param name="show_reordings" />
+		<param name="show_timers" />
+		<param name="show_channelgroups" />
+		<param name="show_search" />
 		<param name="list_id" />
 		<definition>
-			<include content="WidgetListChannels" condition="$PARAM[show_channels]">
+			<include content="WidgetListPVR" condition="$PARAM[show_channels]">
 				<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 				<param name="sortby" value="lastplayed"/>
 				<param name="sortorder" value="descending"/>
 				<param name="widget_header" value="$LOCALIZE[31018]"/>
-				<param name="widget_target" value="files"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="info_update" value="5000"/>
 			</include>
-			<include content="WidgetListChannels" condition="$PARAM[show_recordings]">
+			<include content="WidgetListPVR" condition="$PARAM[show_recordings]">
 				<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
 				<param name="sortby" value="date"/>
 				<param name="sortorder" value="descending"/>
 				<param name="widget_header" value="$LOCALIZE[31015]"/>
 				<param name="widget_target" value="pvr"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="label" value="$INFO[ListItem.ChannelName]"/>
-				<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+				<param name="label" value="$INFO[ListItem.Title]$INFO[ListItem.Date, (,)]"/>
+				<param name="label2" value="$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName]"/>
+			</include>
+			<include content="WidgetListPVR" condition="$PARAM[show_timers]">
+				<param name="content_path" value="pvr://timers/radio/timers/?view=hidedisabled"/>
+				<param name="sortorder" value="ascending"/>
+				<param name="sortby" value="date"/>
+				<param name="widget_header" value="$LOCALIZE[19040]"/>
+				<param name="widget_target" value="radiotimers"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="label" value="$INFO[ListItem.Title]$INFO[ListItem.Date, (,)]"/>
+				<param name="label2" value="$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName]"/>
+			</include>
+			<include content="WidgetListPVR" condition="$PARAM[show_channelgroups]">
+				<param name="content_path" value="pvr://channels/radio"/>
+				<param name="widget_header" value="$LOCALIZE[19174]"/>
+				<param name="widget_target" value="radioguide"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="item_treshold" value="1"/>
+			</include>
+			<include content="WidgetListPVR" condition="$PARAM[show_search]">
+				<param name="content_path" value="pvr://search/radio/savedsearches"/>
+				<param name="sortorder" value="descending"/>
+				<param name="sortby" value="date"/>
+				<param name="widget_header" value="$LOCALIZE[19337]"/>
+				<param name="widget_target" value="radiosearch"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 		</definition>
 	</include>
@@ -681,8 +730,8 @@
 		<onload condition="!$EXP[HasTVShowAction]">Skin.SetBool(tvshowaction_titles)</onload>
 		<onload condition="!$EXP[HasMusicAction]">Skin.SetBool(musicaction_root)</onload>
 		<onload condition="!$EXP[HasMusicVideoAction]">Skin.SetBool(mvaction_root)</onload>
-		<onload condition="!$EXP[HasTVAction]">Skin.SetBool(tvaction_channels)</onload>
-		<onload condition="!$EXP[HasRadioAction]">Skin.SetBool(radioaction_channels)</onload>
+		<onload condition="!$EXP[HasTVAction]">Skin.SetBool(tvaction_guide)</onload>
+		<onload condition="!$EXP[HasRadioAction]">Skin.SetBool(radioaction_guide)</onload>
 		<onload condition="!$EXP[HasVideoAction]">Skin.SetBool(videoaction_root)</onload>
 		<onload condition="!$EXP[HasPictureAction]">Skin.SetBool(picaction_root)</onload>
 		<onload condition="!$EXP[HasMovieSlot1]">Skin.SetBool(movieslot1_show_inprogress)</onload>	
@@ -711,9 +760,12 @@
 		<onload condition="!$EXP[HasTVSlot2]">Skin.SetBool(tvslot2_show_recordings)</onload>
 		<onload condition="!$EXP[HasTVSlot3]">Skin.SetBool(tvslot3_show_timers)</onload>
 		<onload condition="!$EXP[HasTVSlot4]">Skin.SetBool(tvslot4_show_channelgroup)</onload>
+		<onload condition="!$EXP[HasTVSlot5]">Skin.SetBool(tvslot5_show_search)</onload>
 		<onload condition="!$EXP[HasRadioSlot1]">Skin.SetBool(radioslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasRadioSlot2]">Skin.SetBool(radioslot2_show_recordings)</onload>
 		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_timers)</onload>
+		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_channelgroup)</onload>
+		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_search)</onload>
 		<onload condition="!$EXP[HasAddonSlot1]">Skin.SetBool(addonslot1_show_video)</onload>	
 		<onload condition="!$EXP[HasAddonSlot2]">Skin.SetBool(addonslot2_show_music)</onload>	
 		<onload condition="!$EXP[HasAddonSlot3]">Skin.SetBool(addonslot3_show_none)</onload>	
