@@ -454,35 +454,6 @@
 					<control type="grouplist" id="12001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>12010</pagecontrol>
-						<control type="grouplist" id="12855">
-							<height>390</height>
-							<left>0</left>
-							<right>0</right>
-							<top>36</top>
-							<orientation>horizontal</orientation>
-							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
-							<align>left</align>
-							<control type="group">
-								<width>674</width>
-								<visible>PVR.IsRecordingTV</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.TVNowRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.TVNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNowRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-							<control type="group">
-								<width>674</width>
-								<visible>PVR.HasNonRecordingTVTimer</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.TVNextRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-						</control>
 						<include condition="[Skin.HasSetting(tv_categories_standard) | !$EXP[HasTVCategories]] + System.HasPVRAddon" content="WidgetListCategories">
 							<param name="content_path" value="pvr://tv/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
@@ -497,26 +468,36 @@
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot1_show_none)  + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(tvslot1_show_channels) | !$EXP[HasTVSlot1]" />
 							<param name="show_recordings" value="Skin.HasSetting(tvslot1_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(tvslot1_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot1_show_channelgroups)" />
 							<param name="list_id" value="12200" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot2_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(tvslot2_show_channels)" />
 							<param name="show_recordings" value="Skin.HasSetting(tvslot2_show_recordings) | !$EXP[HasTVSlot2]" />
+							<param name="show_timers" value="Skin.HasSetting(tvslot2_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot2_show_channelgroups)" />
 							<param name="list_id" value="12300" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot3_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(tvslot3_show_channels)" />
 							<param name="show_recordings" value="Skin.HasSetting(tvslot3_show_recordings)" />
-							<param name="show_channelgroups" value="Skin.HasSetting(tvslot3_show_channelgroups) | !$EXP[HasTVSlot3]" />
+							<param name="show_timers" value="Skin.HasSetting(tvslot3_show_timers) | !$EXP[HasTVSlot3]" />
+							<param name="show_channelgroups" value="Skin.HasSetting(tvslot3_show_channelgroups)" />
 							<param name="list_id" value="12400" />
+						</include>
+						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot4_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(tvslot4_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(tvslot4_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(tvslot4_show_timers)" />
+							<param name="show_channelgroups" value="Skin.HasSetting(tvslot4_show_channelgroups) | !$EXP[HasTVSlot4]" />
+							<param name="list_id" value="12500" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
-						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://all/kodi.pvrclient,return)"/>
+						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://default_binary_addons_source/kodi.pvrclient,return)"/>
 						<param name="button_id" value="12500"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
@@ -532,35 +513,6 @@
 					<control type="grouplist" id="13001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>13010</pagecontrol>
-						<control type="grouplist" id="13855">
-							<height>390</height>
-							<left>0</left>
-							<right>0</right>
-							<top>36</top>
-							<orientation>horizontal</orientation>
-							<align>center</align>
-							<visible>PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer</visible>
-							<control type="group">
-								<width>680</width>
-								<visible>PVR.IsRecordingRadio</visible>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.RadioNowRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19158]" />
-									<param name="label1" value="$INFO[PVR.RadioNowRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.RadioNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNowRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-							<control type="group">
-								<visible>PVR.HasNonRecordingRadioTimer</visible>
-								<width>680</width>
-								<include content="PVRWidget">
-									<param name="icon" value="$INFO[PVR.RadioNextRecordingChannelIcon]" />
-									<param name="header" value="$LOCALIZE[19157]" />
-									<param name="label1" value="$INFO[PVR.RadioNextRecordingDateTime]" />
-									<param name="label2" value="$INFO[PVR.RadioNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.RadioNextRecordingChannel][/COLOR]" />
-								</include>
-							</control>
-						</control>
 						<include condition="[Skin.HasSetting(radio_categories_standard) | !$EXP[HasRadioCategories]] + System.HasPVRAddon" content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
@@ -574,18 +526,26 @@
 						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot1_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(radioslot1_show_channels) | !$EXP[HasRadioSlot1]" />
 							<param name="show_recordings" value="Skin.HasSetting(radioslot1_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(radioslot1_show_timers)" />
 							<param name="list_id" value="13200" />
 						</include>
 						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot2_show_none) + System.HasPVRAddon">
 							<param name="show_channels" value="Skin.HasSetting(radioslot2_show_channels)" />
 							<param name="show_recordings" value="Skin.HasSetting(radioslot2_show_recordings) | !$EXP[HasRadioSlot2]" />
+							<param name="show_timers" value="Skin.HasSetting(radioslot2_show_timers)" />
+							<param name="list_id" value="13300" />
+						</include>
+						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot3_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(radioslot3_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(radioslot3_show_recordings)" />
+							<param name="show_timers" value="Skin.HasSetting(radioslot3_show_timers) | !$EXP[HasRadioSlot3]" />
 							<param name="list_id" value="13300" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
-						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://all/kodi.pvrclient,return)"/>
+						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://default_binary_addons_source/kodi.pvrclient,return)"/>
 						<param name="button_id" value="13400"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
@@ -871,7 +831,7 @@
 					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[31162]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
-						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://all/category.gameaddons,return)"/>
+						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://default_binary_addons_source/category.gameaddons,return)"/>
 						<param name="button_id" value="17100"/>
 						<param name="visible" value="!Integer.IsGreater(Container(17001).NumItems,0) + !Skin.HasSetting(no_games)"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
