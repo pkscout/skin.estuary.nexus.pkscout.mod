@@ -15,7 +15,7 @@
 			</control>
 			<control type="group">
 				<visible>!$PARAM[only_label_condition]</visible>
-				<animation effect="slide" start="0,0" end="0,6" time="0" condition="!$EXP[listitem_has_epg_event_info]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,16" time="0" condition="!$EXP[listitem_has_epg_event_info]">Conditional</animation>
 				<control type="image">
 					<left>29</left>
 					<top>17</top>
@@ -100,8 +100,9 @@
 		<param name="only_label_condition">false</param>
 		<param name="has_info_icon">false</param>
 		<param name="has_status_icon">false</param>
+		<param name="info_update">0</param>
 		<definition>
-			<itemlayout height="100">
+			<itemlayout height="100" infoupdate="$PARAM[info_update]">
 				<control type="progress">
 					<left>20</left>
 					<top>66</top>
@@ -125,7 +126,7 @@
 					<param name="label4" value="[COLOR grey]$INFO[ListItem.Comment][/COLOR]" />
 				</include>
 			</itemlayout>
-			<focusedlayout height="100">
+			<focusedlayout height="100" infoupdate="$PARAM[info_update]">
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -418,14 +419,14 @@
 			<control type="textbox">
 				<top>465</top>
 				<width>830</width>
-				<bottom>80</bottom>
+				<bottom>list_bottom_offset</bottom>
 				<label>$VAR[FlagLabel,,[CR]]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.TimerType,[COLOR grey]$LOCALIZE[803]:[/COLOR] ,[CR]]$VAR[RecordingSizeLabel]$VAR[ExpirationDateTimeLabel]$INFO[ListItem.Plot,[CR]]</label>
 				<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
 		</control>
 		<control type="group">
 			<visible>ListItem.IsFolder</visible>
-			<top>100</top>
+			<top>list_top_offset</top>
 			<control type="label">
 				<top>10</top>
 				<width>830</width>
