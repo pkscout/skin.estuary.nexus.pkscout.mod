@@ -764,8 +764,8 @@
 		<onload condition="!$EXP[HasRadioSlot1]">Skin.SetBool(radioslot1_show_channels)</onload>	
 		<onload condition="!$EXP[HasRadioSlot2]">Skin.SetBool(radioslot2_show_recordings)</onload>
 		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_timers)</onload>
-		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_channelgroup)</onload>
-		<onload condition="!$EXP[HasRadioSlot3]">Skin.SetBool(radioslot3_show_search)</onload>
+		<onload condition="!$EXP[HasRadioSlot4]">Skin.SetBool(radioslot4_show_channelgroup)</onload>
+		<onload condition="!$EXP[HasRadioSlot5]">Skin.SetBool(radioslot5_show_search)</onload>
 		<onload condition="!$EXP[HasAddonSlot1]">Skin.SetBool(addonslot1_show_video)</onload>	
 		<onload condition="!$EXP[HasAddonSlot2]">Skin.SetBool(addonslot2_show_music)</onload>	
 		<onload condition="!$EXP[HasAddonSlot3]">Skin.SetBool(addonslot3_show_none)</onload>	
@@ -773,7 +773,7 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.0.0)</onload>
+		<onload>Skin.SetString(skin_version,1.0.1)</onload>
 	</include>
 	<include name="ModFonts">
 			<!-- Normal Fonts -->
