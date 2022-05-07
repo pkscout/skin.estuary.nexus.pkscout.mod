@@ -913,7 +913,23 @@ msgctxt "#31523"
 msgid "Roboto Flex"
 msgstr ""
 
-#empty strings from id 31524 to 31599
+#: /xml/Variables.xml
+msgctxt "#31524"
+msgid "Choose what main menu items are shown and in what order."
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31525"
+msgid "Select action run for certain main menu items."
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31526"
+msgid "Choose how categories are displayed as well as which widgets show and in what order."
+msgstr ""
+
+
+#empty strings from id 31527 to 31599
 
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name

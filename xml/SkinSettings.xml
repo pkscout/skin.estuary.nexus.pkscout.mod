@@ -884,7 +884,7 @@
 			<font>font12</font>
 			<align>justify</align>
 			<textcolor>button_focus</textcolor>
-			<label>$VAR[SkinSettingsHelpTextVar]</label>
+			<label>$VAR[ModSkinSettingsHelpTextVar]</label>
 			<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
 		</control>
 	</controls>

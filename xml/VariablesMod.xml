@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ModSkinSettingsHelpTextVar">
+		<value condition="Container(9000).HasFocus(1)">$LOCALIZE[31129]</value>
+		<value condition="Container(9000).HasFocus(2)">$LOCALIZE[31524]</value>
+		<value condition="Container(9000).HasFocus(3)">$LOCALIZE[31525]</value>
+		<value condition="Container(9000).HasFocus(4)">$LOCALIZE[31526]</value>		
+		<value condition="Container(9000).HasFocus(5)">$LOCALIZE[31169]</value>
+	</variable>
 	<variable name="BackgroundOverlayTypeVar">
 		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
 		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
