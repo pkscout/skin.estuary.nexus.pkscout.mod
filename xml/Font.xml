@@ -303,6 +303,9 @@
 		</font>
 	</fontset>
 	<fontset id="RobotoCondensed" idloc="31522">
-	    <include>ModFonts</include>
+	    <include>ModFontsRobotoCondensed</include>
+	</fontset>	
+	<fontset id="RobotoFlex" idloc="31523">
+	    <include>ModFontsRobotoFlex</include>
 	</fontset>	
 </fonts>

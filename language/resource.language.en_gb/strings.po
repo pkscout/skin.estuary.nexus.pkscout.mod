@@ -908,7 +908,12 @@ msgctxt "#31522"
 msgid "Roboto Condensed"
 msgstr ""
 
-#empty strings from id 31523 to 31599
+#: /xml/Font.xml
+msgctxt "#31523"
+msgid "Roboto Flex"
+msgstr ""
+
+#empty strings from id 31524 to 31599
 
 #: /xml/DialogPlayerProcessInfo.xml
 #. Label to show the video codec name
