@@ -705,7 +705,7 @@
 		</definition>
 	</include>
 	<include name="LoadDefaultConfig">
-		<onload condition="String.IsEmpty(Skin.String(background_overlay)">Skin.SetString(background_overlay,1)</onload>
+		<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
 		<onload condition="!$EXP[HasMenuSlot1]">Skin.SetBool(slot1_show_movies)</onload>	
 		<onload condition="!$EXP[HasMenuSlot2]">Skin.SetBool(slot2_show_tvshows)</onload>	
 		<onload condition="!$EXP[HasMenuSlot3]">Skin.SetBool(slot3_show_music)</onload>	
