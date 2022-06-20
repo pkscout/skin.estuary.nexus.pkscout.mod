@@ -80,12 +80,6 @@
 					<selected>Skin.HasSetting(show_artist_bio)</selected>
 					<visible>System.HasAddon(script.artistslideshow)</visible>
 				</control>
-				<control type="radiobutton" id="709">
-					<label>$LOCALIZE[31506]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(show_seekbar_at_bottom)</onclick>
-					<selected>Skin.HasSetting(show_seekbar_at_bottom)</selected>
-				</control>
 			</control>
 			<control type="grouplist" id="610">
 				<top>133</top>
