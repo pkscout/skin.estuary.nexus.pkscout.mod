@@ -848,7 +848,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>$LOCALIZE[31061]</label>
+						<label>$LOCALIZE[31507]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
@@ -856,7 +856,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="4">
-						<label>$LOCALIZE[31148]</label>
+						<label>$LOCALIZE[31061]</label>
 						<onclick>noop</onclick>
 					</item>
 					<item id="5">

@@ -847,7 +847,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#31503"
-msgid "Menu item actions"
+msgid "Main menu actions"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -865,7 +865,12 @@ msgctxt "#31506"
 msgid "Display seek bar at bottom of screen"
 msgstr ""
 
-#empty strings from id 31507 to 31509
+#: /xml/SkinSettings.xml
+msgctxt "#31507"
+msgid "Main menu order"
+msgstr ""
+
+#empty strings from id 31508 to 31509
 
 #: /xml/SkinSettings.xml
 msgctxt "#31510"
