@@ -329,35 +329,35 @@
 				<control type="button" id="8021">
 					<label>- $LOCALIZE[1034] 1</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 626|tvshowslot1_show_inprogress, 20387|tvshowslot1_show_recent, 31122|tvshowslot1_show_unwatched, 31510|tvshowslot1_show_inprogunwatched, 135|tvshowslot1_show_genres, 20388|tvshowslot1_show_studios, 1037|tvshowslot1_show_videoaddons, 351|tvshowslot1_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 626|tvshowslot1_show_inprogress, 20387|tvshowslot1_show_recent, 31122|tvshowslot1_show_unwatched, 31510|tvshowslot1_show_inprogunwatched, 31509|tvshowslot1_show_random, 135|tvshowslot1_show_genres, 20388|tvshowslot1_show_studios, 1037|tvshowslot1_show_videoaddons, 351|tvshowslot1_show_none)</onclick>
 					<label2>$VAR[TVShowSubMenuSlot1Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
 				<control type="button" id="8022">
 					<label>- $LOCALIZE[1034] 2</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 626|tvshowslot2_show_inprogress, 20387|tvshowslot2_show_recent, 31122|tvshowslot2_show_unwatched, 31510|tvshowslot2_show_inprogunwatched, 135|tvshowslot2_show_genres, 20388|tvshowslot2_show_studios, 1037|tvshowslot2_show_videoaddons, 351|tvshowslot2_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 626|tvshowslot2_show_inprogress, 20387|tvshowslot2_show_recent, 31122|tvshowslot2_show_unwatched, 31510|tvshowslot2_show_inprogunwatched, 31509|tvshowslot2_show_random, 135|tvshowslot2_show_genres, 20388|tvshowslot2_show_studios, 1037|tvshowslot2_show_videoaddons, 351|tvshowslot2_show_none)</onclick>
 					<label2>$VAR[TVShowSubMenuSlot2Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
 				<control type="button" id="8023">
 					<label>- $LOCALIZE[1034] 3</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 626|tvshowslot3_show_inprogress, 20387|tvshowslot3_show_recent, 31122|tvshowslot3_show_unwatched, 31510|tvshowslot3_show_inprogunwatched, 135|tvshowslot3_show_genres, 20388|tvshowslot3_show_studios, 1037|tvshowslot3_show_videoaddons, 351|tvshowslot3_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 626|tvshowslot3_show_inprogress, 20387|tvshowslot3_show_recent, 31122|tvshowslot3_show_unwatched, 31510|tvshowslot3_show_inprogunwatched, 31509|tvshowslot3_show_random, 135|tvshowslot3_show_genres, 20388|tvshowslot3_show_studios, 1037|tvshowslot3_show_videoaddons, 351|tvshowslot3_show_none)</onclick>
 					<label2>$VAR[TVShowSubMenuSlot3Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
 				<control type="button" id="8024">
 					<label>- $LOCALIZE[1034] 4</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 626|tvshowslot4_show_inprogress, 20387|tvshowslot4_show_recent, 31122|tvshowslot4_show_unwatched, 31510|tvshowslot4_show_inprogunwatched, 135|tvshowslot4_show_genres, 20388|tvshowslot4_show_studios, 1037|tvshowslot4_show_videoaddons, 351|tvshowslot4_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 626|tvshowslot4_show_inprogress, 20387|tvshowslot4_show_recent, 31122|tvshowslot4_show_unwatched, 31510|tvshowslot4_show_inprogunwatched, 31509|tvshowslot4_show_random, 135|tvshowslot4_show_genres, 20388|tvshowslot4_show_studios, 1037|tvshowslot4_show_videoaddons, 351|tvshowslot4_show_none)</onclick>
 					<label2>$VAR[TVShowSubMenuSlot4Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
 				<control type="button" id="8025">
 					<label>- $LOCALIZE[1034] 5</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 626|tvshowslot5_show_inprogress, 20387|tvshowslot5_show_recent, 31122|tvshowslot5_show_unwatched, 31510|tvshowslot5_show_inprogunwatched, 135|tvshowslot5_show_genres, 20388|tvshowslot5_show_studios, 1037|tvshowslot5_show_videoaddons, 351|tvshowslot5_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 626|tvshowslot5_show_inprogress, 20387|tvshowslot5_show_recent, 31122|tvshowslot5_show_unwatched, 31510|tvshowslot5_show_inprogunwatched, 31509|tvshowslot5_show_random, 135|tvshowslot5_show_genres, 20388|tvshowslot5_show_studios, 1037|tvshowslot5_show_videoaddons, 351|tvshowslot5_show_none)</onclick>
 					<label2>$VAR[TVShowSubMenuSlot5Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>

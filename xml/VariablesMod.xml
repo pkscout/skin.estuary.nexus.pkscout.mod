@@ -416,6 +416,7 @@
 		<value condition="Skin.HasSetting(tvshowslot1_show_recent)">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_unwatched)">$LOCALIZE[31122]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_genres)">$LOCALIZE[135]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_studio)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot1_show_videoaddons)">$LOCALIZE[1037]</value>
@@ -426,6 +427,7 @@
 		<value condition="Skin.HasSetting(tvshowslot2_show_inprogress)">$LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_unwatched)">$LOCALIZE[31122]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_genres)">$LOCALIZE[135]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_studio)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot2_show_videoaddons)">$LOCALIZE[1037]</value>
@@ -436,6 +438,7 @@
 		<value condition="Skin.HasSetting(tvshowslot3_show_inprogress)">$LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_recent)">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_genres)">$LOCALIZE[135]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_studio)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot3_show_videoaddons)">$LOCALIZE[1037]</value>
@@ -447,6 +450,7 @@
 		<value condition="Skin.HasSetting(tvshowslot4_show_recent)">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_unwatched)">$LOCALIZE[31122]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_studio)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot4_show_none)">$LOCALIZE[351]</value>
@@ -457,6 +461,7 @@
 		<value condition="Skin.HasSetting(tvshowslot5_show_recent)">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_unwatched)">$LOCALIZE[31122]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_random)">$LOCALIZE[31509]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_genres)">$LOCALIZE[135]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_videoaddons)">$LOCALIZE[1037]</value>
 		<value condition="Skin.HasSetting(tvshowslot5_show_none)">$LOCALIZE[351]</value>
@@ -813,19 +818,19 @@
 		Skin.HasSetting(movieslot6_show_inprogress) | Skin.HasSetting(movieslot6_show_recent) | Skin.HasSetting(movieslot6_show_unwatched) | Skin.HasSetting(movieslot6_show_random) | Skin.HasSetting(movieslot6_show_genres) | Skin.HasSetting(movieslot6_show_sets) | Skin.HasSetting(movieslot6_show_videoaddons) | Skin.HasSetting(movieslot6_show_none)
 	</expression>	
 	<expression name="HasTVShowSlot1">
-		Skin.HasSetting(tvshowslot1_show_inprogress) | Skin.HasSetting(tvshowslot1_show_recent) | Skin.HasSetting(tvshowslot1_show_unwatched) | Skin.HasSetting(tvshowslot1_show_inprogunwatched) | Skin.HasSetting(tvshowslot1_show_genres) | Skin.HasSetting(tvshowslot1_show_studio) | Skin.HasSetting(tvshowslot1_show_videoaddons) | Skin.HasSetting(tvshowslot1_show_none)
+		Skin.HasSetting(tvshowslot1_show_inprogress) | Skin.HasSetting(tvshowslot1_show_recent) | Skin.HasSetting(tvshowslot1_show_unwatched) | Skin.HasSetting(tvshowslot1_show_inprogunwatched) | Skin.HasSetting(tvshowslot1_show_random) | Skin.HasSetting(tvshowslot1_show_genres) | Skin.HasSetting(tvshowslot1_show_studio) | Skin.HasSetting(tvshowslot1_show_videoaddons) | Skin.HasSetting(tvshowslot1_show_none)
 	</expression>	
 	<expression name="HasTVShowSlot2">
-		Skin.HasSetting(tvshowslot2_show_inprogress) | Skin.HasSetting(tvshowslot2_show_recent) | Skin.HasSetting(tvshowslot2_show_unwatched) | Skin.HasSetting(tvshowslot2_show_inprogunwatched) | Skin.HasSetting(tvshowslot2_show_genres) | Skin.HasSetting(tvshowslot2_show_studio) | Skin.HasSetting(tvshowslot2_show_videoaddons) | Skin.HasSetting(tvshowslot2_show_none)
+		Skin.HasSetting(tvshowslot2_show_inprogress) | Skin.HasSetting(tvshowslot2_show_recent) | Skin.HasSetting(tvshowslot2_show_unwatched) | Skin.HasSetting(tvshowslot2_show_inprogunwatched) | Skin.HasSetting(tvshowslot2_show_random) | Skin.HasSetting(tvshowslot2_show_genres) | Skin.HasSetting(tvshowslot2_show_studio) | Skin.HasSetting(tvshowslot2_show_videoaddons) | Skin.HasSetting(tvshowslot2_show_none)
 	</expression>	
 	<expression name="HasTVShowSlot3">
-		Skin.HasSetting(tvshowslot3_show_inprogress) | Skin.HasSetting(tvshowslot3_show_recent) | Skin.HasSetting(tvshowslot3_show_unwatched) | Skin.HasSetting(tvshowslot3_show_inprogunwatched) | Skin.HasSetting(tvshowslot3_show_genres) | Skin.HasSetting(tvshowslot3_show_studio) | Skin.HasSetting(tvshowslot3_show_videoaddons) | Skin.HasSetting(tvshowslot3_show_none)
+		Skin.HasSetting(tvshowslot3_show_inprogress) | Skin.HasSetting(tvshowslot3_show_recent) | Skin.HasSetting(tvshowslot3_show_unwatched) | Skin.HasSetting(tvshowslot3_show_inprogunwatched) | Skin.HasSetting(tvshowslot3_show_random) | Skin.HasSetting(tvshowslot3_show_genres) | Skin.HasSetting(tvshowslot3_show_studio) | Skin.HasSetting(tvshowslot3_show_videoaddons) | Skin.HasSetting(tvshowslot3_show_none)
 	</expression>	
 	<expression name="HasTVShowSlot4">
-		Skin.HasSetting(tvshowslot4_show_inprogress) | Skin.HasSetting(tvshowslot4_show_recent) | Skin.HasSetting(tvshowslot4_show_unwatched) | Skin.HasSetting(tvshowslot4_show_inprogunwatched) | Skin.HasSetting(tvshowslot4_show_genres) | Skin.HasSetting(tvshowslot4_show_studio) | Skin.HasSetting(tvshowslot4_show_none)
+		Skin.HasSetting(tvshowslot4_show_inprogress) | Skin.HasSetting(tvshowslot4_show_recent) | Skin.HasSetting(tvshowslot4_show_unwatched) | Skin.HasSetting(tvshowslot4_show_inprogunwatched) | Skin.HasSetting(tvshowslot4_show_random) | Skin.HasSetting(tvshowslot4_show_genres) | Skin.HasSetting(tvshowslot4_show_studio) | Skin.HasSetting(tvshowslot4_show_none)
 	</expression>	
 	<expression name="HasTVShowSlot5">
-		Skin.HasSetting(tvshowslot5_show_inprogress) | Skin.HasSetting(tvshowslot5_show_recent) | Skin.HasSetting(tvshowslot5_show_unwatched) | Skin.HasSetting(tvshowslot5_show_inprogunwatched) | Skin.HasSetting(tvshowslot5_show_genres) | Skin.HasSetting(tvshowslot5_show_studio) | Skin.HasSetting(tvshowslot5_show_videoaddons) | Skin.HasSetting(tvshowslot5_show_none)
+		Skin.HasSetting(tvshowslot5_show_inprogress) | Skin.HasSetting(tvshowslot5_show_recent) | Skin.HasSetting(tvshowslot5_show_unwatched) | Skin.HasSetting(tvshowslot5_show_inprogunwatched) | Skin.HasSetting(tvshowslot5_show_random) | Skin.HasSetting(tvshowslot5_show_genres) | Skin.HasSetting(tvshowslot5_show_studio) | Skin.HasSetting(tvshowslot5_show_videoaddons) | Skin.HasSetting(tvshowslot5_show_none)
 	</expression>	
 	<expression name="HasMusicSlot1">
 		Skin.HasSetting(musicslot1_show_playedalbums) | Skin.HasSetting(musicslot1_show_addedalbums) | Skin.HasSetting(musicslot1_show_randomalbums) | Skin.HasSetting(musicslot1_show_randomartists) | Skin.HasSetting(musicslot1_show_unplayedalbums) | Skin.HasSetting(musicslot1_show_mostplayedalbums) | Skin.HasSetting(musicslot1_show_musicaddons) | Skin.HasSetting(musicslot1_show_none)

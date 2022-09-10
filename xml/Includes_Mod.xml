@@ -336,6 +336,7 @@
 		<param name="show_recent" />
 		<param name="show_unwatched" />
 		<param name="show_inprogunwatched" />
+		<param name="show_random" />
 		<param name="show_genres" />
 		<param name="show_studio" />
 		<param name="show_videoaddons" />
@@ -364,6 +365,12 @@
 			<include condition="$PARAM[show_inprogunwatched]" content="WidgetListPoster">
 				<param name="content_path" value="special://skin/playlists/unwatched_inprogress_tvshows.xsp"/>
 				<param name="widget_header" value="$LOCALIZE[31122] / $LOCALIZE[626]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include condition="$PARAM[show_random]" content="WidgetListPoster">
+				<param name="content_path" value="special://skin/playlists/random_tvshows.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31509]"/>
 				<param name="widget_target" value="videos"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
@@ -773,7 +780,7 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.1.2)</onload>
+		<onload>Skin.SetString(skin_version,1.1.3)</onload>
 	</include>
 	<include name="ModFontsRobotoCondensed">
 			<!-- Normal Fonts -->

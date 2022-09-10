@@ -162,6 +162,7 @@
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot1_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot1_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot1_show_inprogunwatched)" />
+							<param name="show_random" value="Skin.HasSetting(tvshowslot1_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot1_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot1_show_studio)" />
 							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot1_show_videoaddons)" />
@@ -172,6 +173,7 @@
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot2_show_recent) | !$EXP[HasTVShowSlot2]" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot2_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot2_show_inprogunwatched)" />
+							<param name="show_random" value="Skin.HasSetting(tvshowslot2_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot2_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot2_show_studio)" />
 							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot2_show_videoaddons)" />
@@ -182,6 +184,7 @@
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot3_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot3_show_unwatched) | !$EXP[HasTVShowSlot3]" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot3_show_inprogunwatched)" />
+							<param name="show_random" value="Skin.HasSetting(tvshowslot3_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot3_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot3_show_studio)" />
 							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot3_show_videoaddons)" />
@@ -192,6 +195,7 @@
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot4_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot4_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot4_show_inprogunwatched) | !$EXP[HasTVShowSlot4]" />
+							<param name="show_random" value="Skin.HasSetting(tvshowslot4_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot4_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot4_show_studio)" />
 							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot4_show_videoaddons)" />
@@ -202,6 +206,7 @@
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot5_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot5_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot5_show_inprogunwatched)" />
+							<param name="show_random" value="Skin.HasSetting(tvshowslot5_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot5_show_genres) | !$EXP[HasTVShowSlot5]" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot5_show_studio)" />
 							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot5_show_videoaddons)" />
