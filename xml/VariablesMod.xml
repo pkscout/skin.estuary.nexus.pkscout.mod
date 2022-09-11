@@ -573,6 +573,7 @@
 		<value condition="Skin.HasSetting(tvslot1_show_timers)">$LOCALIZE[19040]</value>
 		<value condition="Skin.HasSetting(tvslot1_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot1_show_search)">$LOCALIZE[19337]</value>
+		<value condition="Skin.HasSetting(tvslot1_show_nextrecordings)">$LOCALIZE[31508]</value>
 		<value condition="Skin.HasSetting(tvslot1_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[31016]</value>
 	</variable>
@@ -582,6 +583,7 @@
 		<value condition="Skin.HasSetting(tvslot2_show_timers)">$LOCALIZE[19040]</value>
 		<value condition="Skin.HasSetting(tvslot2_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot2_show_search)">$LOCALIZE[19337]</value>
+		<value condition="Skin.HasSetting(tvslot2_show_nextrecordings)">$LOCALIZE[31508]</value>
 		<value condition="Skin.HasSetting(tvslot2_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[31015]</value>
 	</variable>
@@ -591,6 +593,7 @@
 		<value condition="Skin.HasSetting(tvslot3_show_timers)">$LOCALIZE[19040]</value>
 		<value condition="Skin.HasSetting(tvslot3_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot3_show_search)">$LOCALIZE[19337]</value>
+		<value condition="Skin.HasSetting(tvslot3_show_nextrecordings)">$LOCALIZE[31508]</value>
 		<value condition="Skin.HasSetting(tvslot3_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[19040]</value>
 	</variable>
@@ -600,6 +603,7 @@
 		<value condition="Skin.HasSetting(tvslot4_show_timers)">$LOCALIZE[19040]</value>
 		<value condition="Skin.HasSetting(tvslot4_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot4_show_search)">$LOCALIZE[19337]</value>
+		<value condition="Skin.HasSetting(tvslot4_show_nextrecordings)">$LOCALIZE[31508]</value>
 		<value condition="Skin.HasSetting(tvslot4_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[19173]</value>
 	</variable>
@@ -609,6 +613,7 @@
 		<value condition="Skin.HasSetting(tvslot5_show_timers)">$LOCALIZE[19040]</value>
 		<value condition="Skin.HasSetting(tvslot5_show_channelgroups)">$LOCALIZE[19173]</value>
 		<value condition="Skin.HasSetting(tvslot5_show_search)">$LOCALIZE[19337]</value>
+		<value condition="Skin.HasSetting(tvslot5_show_nextrecordings)">$LOCALIZE[31508]</value>
 		<value condition="Skin.HasSetting(tvslot5_show_none)">$LOCALIZE[351]</value>
 		<value>$LOCALIZE[19337]</value>
 	</variable>
@@ -866,19 +871,19 @@
 		Skin.HasSetting(mvslot5_show_recent) | Skin.HasSetting(mvslot5_show_unwatched) | Skin.HasSetting(mvslot5_show_randomartists) | Skin.HasSetting(mvslot5_show_randomvideos) | Skin.HasSetting(mvslot5_show_studios) | Skin.HasSetting(mvslot5_show_none)
 	</expression>	
 	<expression name="HasTVSlot1">
-		Skin.HasSetting(tvslot1_show_channels) | Skin.HasSetting(tvslot1_show_recordings) | Skin.HasSetting(tvslot1_show_timers) | Skin.HasSetting(tvslot1_show_channelgroups) | Skin.HasSetting(tvslot1_show_search) | Skin.HasSetting(tvslot1_show_none)
+		Skin.HasSetting(tvslot1_show_channels) | Skin.HasSetting(tvslot1_show_recordings) | Skin.HasSetting(tvslot1_show_timers) | Skin.HasSetting(tvslot1_show_channelgroups) | Skin.HasSetting(tvslot1_show_search) | Skin.HasSetting(tvslot1_show_nextrecordings) | Skin.HasSetting(tvslot1_show_none)
 	</expression>	
 	<expression name="HasTVSlot2">
-		Skin.HasSetting(tvslot2_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot2_show_timers) | Skin.HasSetting(tvslot2_show_channelgroups) | Skin.HasSetting(tvslot2_show_search) | Skin.HasSetting(tvslot2_show_none)
+		Skin.HasSetting(tvslot2_show_channels) | Skin.HasSetting(tvslot2_show_recordings) | Skin.HasSetting(tvslot2_show_timers) | Skin.HasSetting(tvslot2_show_channelgroups) | Skin.HasSetting(tvslot2_show_search) | Skin.HasSetting(tvslot2_show_nextrecordings) | Skin.HasSetting(tvslot2_show_none)
 	</expression>
 	<expression name="HasTVSlot3">
-		Skin.HasSetting(tvslot3_show_channels) | Skin.HasSetting(tvslot3_show_recordings) | Skin.HasSetting(tvslot3_show_timers) | Skin.HasSetting(tvslot3_show_channelgroups) | Skin.HasSetting(tvslot3_show_search) | Skin.HasSetting(tvslot3_show_none)
+		Skin.HasSetting(tvslot3_show_channels) | Skin.HasSetting(tvslot3_show_recordings) | Skin.HasSetting(tvslot3_show_timers) | Skin.HasSetting(tvslot3_show_channelgroups) | Skin.HasSetting(tvslot3_show_search) | Skin.HasSetting(tvslot3_show_nextrecordings) | Skin.HasSetting(tvslot3_show_none)
 	</expression>
 	<expression name="HasTVSlot4">
-		Skin.HasSetting(tvslot4_show_channels) | Skin.HasSetting(tvslot4_show_recordings) | Skin.HasSetting(tvslot4_show_timers) | Skin.HasSetting(tvslot4_show_channelgroups) | Skin.HasSetting(tvslot4_show_search) | Skin.HasSetting(tvslot4_show_none)
+		Skin.HasSetting(tvslot4_show_channels) | Skin.HasSetting(tvslot4_show_recordings) | Skin.HasSetting(tvslot4_show_timers) | Skin.HasSetting(tvslot4_show_channelgroups) | Skin.HasSetting(tvslot4_show_search) | Skin.HasSetting(tvslot4_show_nextrecordings) | Skin.HasSetting(tvslot4_show_none)
 	</expression>
 	<expression name="HasTVSlot5">
-		Skin.HasSetting(tvslot5_show_channels) | Skin.HasSetting(tvslot5_show_recordings) | Skin.HasSetting(tvslot5_show_timers) | Skin.HasSetting(tvslot5_show_channelgroups) | Skin.HasSetting(tvslot5_show_search) | Skin.HasSetting(tvslot5_show_none)
+		Skin.HasSetting(tvslot5_show_channels) | Skin.HasSetting(tvslot5_show_recordings) | Skin.HasSetting(tvslot5_show_timers) | Skin.HasSetting(tvslot5_show_channelgroups) | Skin.HasSetting(tvslot5_show_search) | Skin.HasSetting(tvslot5_show_nextrecordings) | Skin.HasSetting(tvslot5_show_none)
 	</expression>
 	<expression name="HasRadioSlot1">
 		Skin.HasSetting(radioslot1_show_channels) | Skin.HasSetting(radioslot1_show_recordings) | Skin.HasSetting(radioslot1_show_timers) | Skin.HasSetting(radioslot1_show_channelgroups) | Skin.HasSetting(radioslot1_show_search) | Skin.HasSetting(radioslot1_show_none)

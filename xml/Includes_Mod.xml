@@ -612,6 +612,7 @@
 		<param name="show_timers" />
 		<param name="show_channelgroups" />
 		<param name="show_search" />
+		<param name="show_nextrecordings" />
 		<param name="list_id" />
 		<definition>
 			<include content="WidgetListPVR" condition="$PARAM[show_channels]">
@@ -654,6 +655,9 @@
 				<param name="sortby" value="date"/>
 				<param name="widget_header" value="$LOCALIZE[19337]"/>
 				<param name="widget_target" value="tvsearch"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="NextRecordings" condition="$PARAM[show_nextrecordings]">
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 		</definition>
@@ -710,6 +714,73 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 		</definition>
+	</include>
+	<include name="NextRecordings">
+		<control type="grouplist" id="$PARAM[list_id]">
+			<height>390</height>
+			<left>0</left>
+			<right>0</right>
+			<top>36</top>
+			<orientation>horizontal</orientation>
+			<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
+			<align>left</align>
+			<control type="group">
+				<width>674</width>
+				<visible>PVR.IsRecordingTV</visible>
+				<include content="PVRNextWidget">
+					<param name="icon" value="$INFO[PVR.TVNowRecordingChannelIcon]" />
+					<param name="header" value="$LOCALIZE[19158]" />
+					<param name="label1" value="$INFO[PVR.TVNowRecordingDateTime]" />
+					<param name="label2" value="$INFO[PVR.TVNowRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNowRecordingChannel][/COLOR]" />
+				</include>
+			</control>
+			<control type="group">
+				<width>674</width>
+				<visible>PVR.HasNonRecordingTVTimer</visible>
+				<include content="PVRNextWidget">
+					<param name="icon" value="$INFO[PVR.TVNextRecordingChannelIcon]" />
+					<param name="header" value="$LOCALIZE[19157]" />
+					<param name="label1" value="$INFO[PVR.TVNextRecordingDateTime]" />
+					<param name="label2" value="$INFO[PVR.TVNextRecordingTitle][CR][COLOR=grey]$INFO[PVR.TVNextRecordingChannel][/COLOR]" />
+				</include>
+			</control>
+		</control>	
+	</include>
+	<include name="PVRNextWidget">
+		<control type="image">
+			<top>60</top>
+			<left>16</left>
+			<width>670</width>
+			<height>225</height>
+			<texture border="21">dialogs/dialog-bg.png</texture>
+		</control>
+		<control type="image">
+			<left>55</left>
+			<top>102</top>
+			<width>140</width>
+			<height>140</height>
+			<aspectratio>keep</aspectratio>
+			<texture background="true" fallback="DefaultVideo.png">$PARAM[icon]</texture>
+		</control>
+		<control type="label">
+			<left>225</left>
+			<top>107</top>
+			<height>25</height>
+			<width>420</width>
+			<label>$PARAM[header]</label>
+			<aligny>center</aligny>
+			<font>font36_title</font>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<left>225</left>
+			<top>152</top>
+			<height>105</height>
+			<width>420</width>
+			<label>$PARAM[label1][CR]$PARAM[label2]</label>
+			<font>font12</font>
+			<shadowcolor>black</shadowcolor>
+		</control>
 	</include>
 	<include name="LoadDefaultConfig">
 		<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>

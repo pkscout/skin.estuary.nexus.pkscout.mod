@@ -492,35 +492,35 @@
 				<control type="button" id="8041">
 					<label>- $LOCALIZE[1034] 1</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 31016|tvslot1_show_channels, 31015|tvslot1_show_recordings, 19040|tvslot1_show_timers, 19173|tvslot1_show_channelgroups, 19337|tvslot1_show_search, 351|tvslot1_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 31016|tvslot1_show_channels, 31015|tvslot1_show_recordings, 31508|tvslot1_show_nextrecordings, 19040|tvslot1_show_timers, 19173|tvslot1_show_channelgroups, 19337|tvslot1_show_search, 351|tvslot1_show_none)</onclick>
 					<label2>$VAR[TVSubMenuSlot1Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot12_show_tv)</visible>
 				</control>
 				<control type="button" id="8042">
 					<label>- $LOCALIZE[1034] 2</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 31016|tvslot2_show_channels, 31015|tvslot2_show_recordings, 19040|tvslot2_show_timers, 19173|tvslot2_show_channelgroups, 19337|tvslot2_show_search, 351|tvslot2_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 31016|tvslot2_show_channels, 31015|tvslot2_show_recordings, 31508|tvslot2_show_nextrecordings, 19040|tvslot2_show_timers, 19173|tvslot2_show_channelgroups, 19337|tvslot2_show_search, 351|tvslot2_show_none)</onclick>
 					<label2>$VAR[TVSubMenuSlot2Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot12_show_tv)</visible>
 				</control>
 				<control type="button" id="8043">
 					<label>- $LOCALIZE[1034] 3</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 31016|tvslot3_show_channels, 31015|tvslot3_show_recordings, 19040|tvslot3_show_timers, 19173|tvslot3_show_channelgroups, 19337|tvslot3_show_search, 351|tvslot3_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 31016|tvslot3_show_channels, 31015|tvslot3_show_recordings, 31508|tvslot3_show_nextrecordings, 19040|tvslot3_show_timers, 19173|tvslot3_show_channelgroups, 19337|tvslot3_show_search, 351|tvslot3_show_none)</onclick>
 					<label2>$VAR[TVSubMenuSlot3Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot12_show_tv)</visible>
 				</control>
 				<control type="button" id="8044">
 					<label>- $LOCALIZE[1034] 4</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 31016|tvslot4_show_channels, 31015|tvslot4_show_recordings, 19040|tvslot4_show_timers, 19173|tvslot4_show_channelgroups, 19337|tvslot4_show_search, 351|tvslot4_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 31016|tvslot4_show_channels, 31015|tvslot4_show_recordings, 31508|tvslot4_show_nextrecordings, 19040|tvslot4_show_timers, 19173|tvslot4_show_channelgroups, 19337|tvslot4_show_search, 351|tvslot4_show_none)</onclick>
 					<label2>$VAR[TVSubMenuSlot4Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot12_show_tv)</visible>
 				</control>
 				<control type="button" id="8045">
 					<label>- $LOCALIZE[1034] 5</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(1034, 31016|tvslot5_show_channels, 31015|tvslot5_show_recordings, 19040|tvslot5_show_timers, 19173|tvslot5_show_channelgroups, 19337|tvslot5_show_search, 351|tvslot5_show_none)</onclick>
+					<onclick>Skin.SelectBool(1034, 31016|tvslot5_show_channels, 31015|tvslot5_show_recordings, 31508|tvslot5_show_nextrecordings, 19040|tvslot5_show_timers, 19173|tvslot5_show_channelgroups, 19337|tvslot5_show_search, 351|tvslot5_show_none)</onclick>
 					<label2>$VAR[TVSubMenuSlot5Label2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot12_show_tv)</visible>
 				</control>

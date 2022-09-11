@@ -476,6 +476,7 @@
 							<param name="show_timers" value="Skin.HasSetting(tvslot1_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot1_show_channelgroups)" />
 							<param name="show_search" value="Skin.HasSetting(tvslot1_show_search)" />
+							<param name="show_nextrecordings" value="Skin.HasSetting(tvslot1_show_nextrecordings)" />
 							<param name="list_id" value="12200" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot2_show_none) + System.HasPVRAddon">
@@ -484,6 +485,7 @@
 							<param name="show_timers" value="Skin.HasSetting(tvslot2_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot2_show_channelgroups)" />
 							<param name="show_search" value="Skin.HasSetting(tvslot2_show_search)" />
+							<param name="show_nextrecordings" value="Skin.HasSetting(tvslot2_show_nextrecordings)" />
 							<param name="list_id" value="12300" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot3_show_none) + System.HasPVRAddon">
@@ -492,6 +494,7 @@
 							<param name="show_timers" value="Skin.HasSetting(tvslot3_show_timers) | !$EXP[HasTVSlot3]" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot3_show_channelgroups)" />
 							<param name="show_search" value="Skin.HasSetting(tvslot3_show_search)" />
+							<param name="show_nextrecordings" value="Skin.HasSetting(tvslot3_show_nextrecordings)" />
 							<param name="list_id" value="12400" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot4_show_none) + System.HasPVRAddon">
@@ -500,6 +503,7 @@
 							<param name="show_timers" value="Skin.HasSetting(tvslot4_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot4_show_channelgroups) | !$EXP[HasTVSlot4]" />
 							<param name="show_search" value="Skin.HasSetting(tvslot4_show_search)" />
+							<param name="show_nextrecordings" value="Skin.HasSetting(tvslot4_show_nextrecordings)" />
 							<param name="list_id" value="12500" />
 						</include>
 						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot5_show_none) + System.HasPVRAddon">
@@ -508,14 +512,15 @@
 							<param name="show_timers" value="Skin.HasSetting(tvslot5_show_timers)" />
 							<param name="show_channelgroups" value="Skin.HasSetting(tvslot5_show_channelgroups)" />
 							<param name="show_search" value="Skin.HasSetting(tvslot5_show_search) | !$EXP[HasTVSlot5]" />
-							<param name="list_id" value="12500" />
+							<param name="show_nextrecordings" value="Skin.HasSetting(tvslot5_show_nextrecordings)" />
+							<param name="list_id" value="12600" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://default_binary_addons_source/kodi.pvrclient,return)"/>
-						<param name="button_id" value="12500"/>
+						<param name="button_id" value="12700"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
