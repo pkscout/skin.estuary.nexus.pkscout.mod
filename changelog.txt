@@ -1,3 +1,6 @@
+v.1.1.5
+added option to have seekbar at the bottom
+
 v.1.1.4
 added option to use old "next up" recording widget as one of the PVR widgets
 
