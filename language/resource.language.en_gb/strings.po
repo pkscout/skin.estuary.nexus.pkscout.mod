@@ -838,7 +838,12 @@ msgctxt "#31173"
 msgid "Video OSD autoclose time (seconds)"
 msgstr ""
 
-#empty strings from id 31173 to 31501
+#. Setting to control what happens when clicking a music album on the home screen
+msgctxt "#31174"
+msgid "Default select action for albums on the home screen"
+msgstr ""
+
+#empty strings from id 31175 to 31501
 
 #: /xml/SkinSettings.xml
 msgctxt "#31502"
