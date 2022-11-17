@@ -1,3 +1,6 @@
+v.1.2.1
+changed location of album action setting to match mod setting groupings
+
 v.1.2.0
 updates from Estuary in Nexus Beta 1
 
