@@ -536,10 +536,12 @@
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>13010</pagecontrol>
 						<include condition="[Skin.HasSetting(radio_categories_standard) | !$EXP[HasRadioCategories]] + System.HasPVRAddon" content="WidgetListCategories">
+							<param name="content_path" value="pvr://radio/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 						</include>
 						<include condition="Skin.HasSetting(radio_categories_icons) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
+							<param name="content_path" value="pvr://radio/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 							<param name="pvr_submenu" value="true"/>
