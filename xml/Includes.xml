@@ -909,7 +909,7 @@
 					<texturenofocus />
 				</control>
 				<control type="label" id="18900">
-					<top>50</top>
+					<top>55</top>
 					<label>$PARAM[sublabel]</label>
 					<left>35</left>
 					<shadowcolor>text_shadow</shadowcolor>
