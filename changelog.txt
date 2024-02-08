@@ -1,3 +1,6 @@
+v.1.3.9
+fix for artist list not running right action
+
 v.1.3.8
 fixes from Estuary in Nexus 20.3
 
