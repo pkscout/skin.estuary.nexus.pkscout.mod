@@ -454,8 +454,6 @@
 				<param name="widget_target" value="music"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="fallback_icon" value="DefaultMusicArtists.png"/>
-				<param name="onclick_condition" value="true"/>
-				<param name="onclick_action" value="$VAR[AlbumOnClickActionVar]"/>
 			</include>
 			<include condition="$PARAM[show_unplayedalbums]" content="WidgetListSquare">
 				<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
